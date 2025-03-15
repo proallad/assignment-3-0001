@@ -12,18 +12,79 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- font-awsome kits -->
+<script src="https://kit.fontawesome.com/34d6f28d24.js" crossorigin="anonymous"></script>
 <style>
     .font-adlam{
         font-family: "ADLaM Display", system-ui;
     }
 </style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+           'pet-primary': '#FFDC26'
+        }
+      }
+    }
+  }
+</script>
 </head>
 <body class="font-adlam">
     <!-- header section -->
-     <header></header>
+     <header class="md:container mx-auto">
+        <nav>
+           
+            <div class="navbar bg-base-100 ">
+                <div class="flex-1 gap-2">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class=" dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                  <img class="size-6" src="c1-assets/logo-header.png" alt="">
+                  <a class="font-thin text-xl">Browse <span class="text-pet-primary">4</span> Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                 <li><a>Breeds</a></li>
+                 <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="gap-2">
+                  <i class="fa-regular fa-bell"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <button class="btn btn-outline btn-warning text-black">login</button>
+                  <a class="btn bg-pet-primary">Register</a>
+                </div>
+              </div>
+
+        </nav>
+     </header>
 
      <!-- main section -->
-      <main></main>
+      <main class="md:container mx-auto"></main>
 
       <!-- footer section -->
        <footer></footer>
